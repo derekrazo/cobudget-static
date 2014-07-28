@@ -1,3 +1,5 @@
+@import utilities
+
 html, body
   width: 100%
   height: 100%
@@ -9,12 +11,12 @@ html, body
     // NAV BAR
     .nav.bar.container
       width: 100%
-      height: 45px
-      background: #f6f8f6
+      height: $nav-bar-height
+      background: white
       position: fixed
 
     .buckets.panel
-      margin-top: 45px
+      margin-top: $nav-bar-height
 
       &.container
         width: 35%
@@ -25,8 +27,10 @@ html, body
       &.container
         width: 65%
         height: 100%
-        padding-left: 35%
-        background: orange
+        margin-left: 35%
+        padding-top: $nav-bar-height
+        background: #f6f8f6
+
       //&.content, &.banner
 
   // iPads (landscape) -----------

@@ -3,7 +3,7 @@
   color: #a0c8cc; }
   .buckets.panel header {
     padding: 30px 30px;
-    min-height: 175px;
+    min-height: 135px;
     color: white; }
     .buckets.panel header.allocated, .buckets.panel header.allocated input {
       background-color: #84c442; }

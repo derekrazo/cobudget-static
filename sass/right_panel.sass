@@ -1,0 +1,62 @@
+@import utilities
+
+//RIGHT PANEL
+.right.panel
+  &.container
+
+    .cover_photo
+      width: 100%
+      height: 195px
+      padding: 0 0 0 0
+      background-image: url('https://loomio-uploads.s3.amazonaws.com/groups/cover_photos/000/000/002/desktop/croppedenspiralites.jpg?1406163668')
+
+    .header
+      padding-left: 40px
+      padding-right: 40px
+      padding-bottom: 15px
+      position: absolute
+      top: 120px
+
+      .banner
+        min-height: 150px
+
+        .banner_image
+          width: 150px
+          height: 150px
+          float: left
+          background-image: url('https://loomio-uploads.s3.amazonaws.com/groups/logos/000/000/002/medium/enspirallogo120.jpg?1406163329')
+          background-image: no-repeat
+          -webkit-background-size: cover
+          -moz-background-size: cover
+          -o-background-size: cover
+          background-size: cover
+
+        /*This is hacky, but workarounds I found were more hacky... Should probly just be replaced with $banner-image-size + $banner-content-gutter */
+        h1
+          margin-left: 180px
+          margin-bottom: 10px
+          color: white
+
+        h2
+          margin-left: 180px
+          font-size: 12px
+          color: white
+
+        .buttons.container
+          width: 100%
+
+          .button
+            float: left
+            margin-left: 30px
+            margin-right: 10px
+            margin-top: 25px
+
+            p
+              font-size: 10px   
+
+    .overview.container
+      padding-left: 40px
+      padding-right: 40px
+      margin-top: 150px
+      height: 100%
+      background: white
