@@ -9,10 +9,11 @@ html, body {
       height: 45px;
       background: #f6f8f6;
       position: fixed; }
-    html .buckets.panel.container, body .buckets.panel.container {
-      width: 35%;
-      height: 100%;
-      float: left; }
+    html .buckets.panel, body .buckets.panel {
+      margin-top: 45px; }
+      html .buckets.panel.container, body .buckets.panel.container {
+        width: 35%;
+        float: left; }
     html .right.panel.container, body .right.panel.container {
       width: 65%;
       height: 100%;

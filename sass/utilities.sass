@@ -2,3 +2,10 @@
   -webkit-border-radius: $radius
   -moz-border-radius: $radius
   border-radius: $radius
+
+@mixin allocatable($property)
+  &.allocated, &.allocated input
+    #{$property}: $funded
+
+  &.allocate, &.allocate input
+    #{$property}: $unfunded

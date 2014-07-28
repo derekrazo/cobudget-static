@@ -1,29 +1,39 @@
 .buckets.panel {
   background-color: #334248;
   color: #a0c8cc; }
-  .buckets.panel .header {
-    padding-top: 45px;
-    height: 175px;
-    background: blue; }
+  .buckets.panel header {
+    padding: 30px 30px;
+    min-height: 175px;
+    color: white; }
+    .buckets.panel header.allocated, .buckets.panel header.allocated input {
+      background-color: #84c442; }
+    .buckets.panel header.allocate, .buckets.panel header.allocate input {
+      background-color: #f37658; }
   .buckets.panel .bucket {
     height: 110px;
     padding: 16px 30px 20px 30px;
     border-bottom: 1px solid #264149;
     border-top: 1px solid #2c434c;
-    position: relative; }
+    min-height: 4em; }
     .buckets.panel .bucket.selected {
       background-color: #14303a; }
     .buckets.panel .bucket h2 {
       margin: 0;
       font-size: 100%;
       font-weight: normal;
-      float: left;
       line-height: 26px; }
     .buckets.panel .bucket .allocation_amount {
       float: right;
       height: 26px; }
-      .buckets.panel .bucket .allocation_amount.allocated {
+      .buckets.panel .bucket .allocation_amount.allocated, .buckets.panel .bucket .allocation_amount.allocated input {
         color: #84c442; }
+      .buckets.panel .bucket .allocation_amount.allocate, .buckets.panel .bucket .allocation_amount.allocate input {
+        color: #f37658; }
+      .buckets.panel .bucket .allocation_amount label {
+        text-transform: uppercase;
+        font-size: 80%;
+        margin-right: 0.4em;
+        margin-left: 0.5em; }
     .buckets.panel .bucket input[type="number"] {
       background-color: #243439;
       border-width: 0;
@@ -31,6 +41,6 @@
       text-align: right;
       font-size: 100%;
       width: 5em;
-      -webkit-border-radius: 0.5em;
-      -moz-border-radius: 0.5em;
-      border-radius: 0.5em; }
+      -webkit-border-radius: 0.3em;
+      -moz-border-radius: 0.3em;
+      border-radius: 0.3em; }

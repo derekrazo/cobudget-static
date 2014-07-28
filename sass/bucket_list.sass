@@ -6,26 +6,27 @@ $dark-base-cutout: #243439
 
 $text-on-dark-base: #A0C8CC
 
-$allocated: #84C442
+$funded: #84C442
+$unfunded: #F37658
 
-$bucket-hpadding: 30px
-$bucket-vpadding: 20px
+$bucket-gutter: 30px
 
 .buckets.panel
   background-color: $dark-base
   color: $text-on-dark-base
 
-  .header
-    padding-top: 45px
-    height: 175px
-    background: blue
+  header
+    @include allocatable(background-color)
+    padding: $bucket-gutter $bucket-gutter
+    min-height: 175px
+    color: white
 
   .bucket
     height: 110px
-    padding: 16px 30px 20px 30px
+    padding: 16px $bucket-gutter 20px $bucket-gutter
     border-bottom: 1px solid #264149
     border-top: 1px solid #2C434C
-    position: relative
+    min-height: 4em
 
     &.selected
       background-color: $dark-base-selected
@@ -34,15 +35,18 @@ $bucket-vpadding: 20px
       margin: 0
       font-size: 100%
       font-weight: normal
-      float: left
       line-height: 26px
 
     .allocation_amount
+      @include allocatable(color)
       float: right
       height: 26px
 
-      &.allocated
-        color: $allocated
+      label
+        text-transform: uppercase
+        font-size: 80%
+        margin-right: 0.4em
+        margin-left: 0.5em
 
     input[type="number"]
       background-color: $dark-base-cutout
@@ -51,4 +55,4 @@ $bucket-vpadding: 20px
       text-align: right
       font-size: 100%
       width: 5em
-      @include rounded
+      @include rounded(0.3em)
