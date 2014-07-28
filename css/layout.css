@@ -1,27 +1,18 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0 0 0 0; }
+  margin: 0 0 0 0;
+  font-family: sans-serif; }
   @media only screen and (min-width: 1224px) {
     html .nav.bar.container, body .nav.bar.container {
       width: 100%;
       height: 45px;
       background: #f6f8f6;
       position: fixed; }
-    html .left.panel.container, body .left.panel.container {
+    html .buckets.panel.container, body .buckets.panel.container {
       width: 35%;
       height: 100%;
-      background: black;
       float: left; }
-    html .left.panel.header, body .left.panel.header {
-      width: 100%;
-      padding-top: 45px;
-      height: 175px;
-      background: blue; }
-    html .left.panel.bucket, body .left.panel.bucket {
-      width: 100%;
-      height: 110px;
-      background: red; }
     html .right.panel.container, body .right.panel.container {
       width: 65%;
       height: 100%;

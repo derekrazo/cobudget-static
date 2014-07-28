@@ -1,0 +1,12 @@
+.buckets.panel {
+  background-color: #334248;
+  color: #46afb6; }
+  .buckets.panel .header {
+    padding-top: 45px;
+    height: 175px;
+    background: blue; }
+  .buckets.panel .bucket {
+    height: 110px;
+    padding: 20px 30px;
+    border-bottom: 1px solid #264149;
+    border-top: 1px solid #2c434c; }
