@@ -3,16 +3,16 @@
   height: 195px;
   padding: 0 0 0 0;
   background-image: url("https://loomio-uploads.s3.amazonaws.com/groups/cover_photos/000/000/002/desktop/croppedenspiralites.jpg?1406163668"); }
-.right.panel.container .header {
+.right.panel.container .content {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 15px;
   position: absolute;
   top: 120px; }
-  .right.panel.container .header .banner {
+  .right.panel.container .content .banner {
     min-height: 150px;
     /*This is hacky, but workarounds I found were more hacky... Should probly just be replaced with $banner-image-size + $banner-content-gutter */ }
-    .right.panel.container .header .banner .banner_image {
+    .right.panel.container .content .banner .banner_image {
       width: 150px;
       height: 150px;
       float: left;
@@ -22,26 +22,32 @@
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover; }
-    .right.panel.container .header .banner h1 {
+    .right.panel.container .content .banner h1 {
       margin-left: 180px;
       margin-bottom: 10px;
       color: white; }
-    .right.panel.container .header .banner h2 {
+    .right.panel.container .content .banner h2 {
       margin-left: 180px;
       font-size: 12px;
       color: white; }
-    .right.panel.container .header .banner .buttons.container {
+    .right.panel.container .content .banner .buttons.container {
       width: 100%; }
-      .right.panel.container .header .banner .buttons.container .button {
+      .right.panel.container .content .banner .buttons.container .button {
         float: left;
         margin-left: 30px;
         margin-right: 10px;
         margin-top: 25px; }
-        .right.panel.container .header .banner .buttons.container .button p {
+        .right.panel.container .content .banner .buttons.container .button p {
           font-size: 10px; }
 .right.panel.container .overview.container {
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 150px;
+  margin-top: 30px;
   height: 100%;
   background: white; }
+  .right.panel.container .overview.container h1 {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 10px; }
+  .right.panel.container .overview.container #title_underline {
+    width: 100%; }
