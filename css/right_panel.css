@@ -50,13 +50,22 @@
   margin-top: 30px;
   height: 100%;
   min-height: 800px;
-  background: white; }
+  background: white;
+  border-style: solid;
+  border-color: #eeeeed;
+  border-width: 2px; }
   .right.panel.container .overview.container .title {
     width: 100%;
-    height: 150px; }
+    height: 50px; }
+    .right.panel.container .overview.container .title h1 {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 50px;
+      margin-bottom: 0px; }
   .right.panel.container .overview.container #budget_overview_title_icon {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    float: left; }
   .right.panel.container .overview.container #title_underline {
     width: 100%; }
   .right.panel.container .overview.container .totals.triplet .totals.section {
