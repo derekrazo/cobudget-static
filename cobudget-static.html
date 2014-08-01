@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/bucket_list.css">
     <link rel="stylesheet" type="text/css" href="css/right_panel.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
   </head>
 
@@ -71,17 +72,17 @@
 
               <div class="buttons container"> 
                 <div class="button">
-                  <img id="budget_overview_icon" src="./assets/bar.svg" alt=""/>
+                  <span class="fa fa-bar-chart-o fa-2x"></span>
                   <p>BUDGET OVERVIEW</p>
                 </div>
 
                 <div class="button">
-                  <img id="contributor_overview_icon" src="./assets/group.svg" alt=""/>
+                  <span class="fa fa-users fa-2x"></span>
                   <p>CONTRIBUTOR OVERVIEW</p>
                 </div>
 
                 <div class="button">
-                  <img id="allocation_overview_icon" src="./assets/person.svg" alt=""/>
+                  <span class="fa fa-user fa-2x"></span>
                   <p>MY ALLOCATION OVERVIEW</p>
                 </div>
             </div>
@@ -91,7 +92,7 @@
           <div class="overview container">
             
             <div class="title">
-              <img id="budget_overview_title_icon" src="./assets/bar.svg" alt=""/>
+              <span class="fa fa-bar-chart-o fa-2x"></span>
               <h1>BUDGET OVERVIEW</h1>
             <div>
 
@@ -99,28 +100,32 @@
 
             <div class="totals triplet">
               <div class="totals section people">
-                <img src="./assets/bar.svg" alt=""/>
-                <h3>CONTRIBUTORS</h3>
-                <p>25 people</p>
+                <span class="fa fa-users fa-3x"></span>
+                <div class="section-detail">
+                  <h5>CONTRIBUTORS</h5>
+                  <span> 25 People </span>
+                </div>
               </div>
 
-              <hv />
+              <div class="vertical_line"></div>
 
               <div class="totals section amount">
-                <img src="./assets/bar.svg" alt=""/>
-                <h3>TOTAL AMOUNT</h3>
-                <p>$20,000</p>
+                <span class="fa fa-database fa-3x"></span>
+                <div class="section-detail">
+                  <h5>TOTAL AMOUNT</h5>
+                  <span> $20,000 </span>
+                </div>
               </div>
 
-              <hv />
+              <div class="vertical_line"></div>
 
               <div class="totals section buckets">
-                <img src="./assets/bar.svg" alt=""/>
-                <h3>NUMBER OF BUCKETS</h3>
-                <p>12 buckets</p>
+                <span class="fa fa-bitbucket fa-3x"></span>
+                <div class="section-detail">
+                  <h5>NUMBER OF BUCKETS</h5>
+                  <span> 12 buckets </span>
+                </div>
               </div>
-
-              <hv />
             </div>
 
             <hr / id="title_underline">
@@ -128,21 +133,21 @@
             <div class="progress triplet">
               <div class="progress section allocators">
                 <p>60%</p>
-                <img src="./assets/bar.svg" alt=""/>
+                <span class="fa fa-users fa-5x"></span>
                 <h3>ALLOCATORS</h3>
                 <p>15 people</p>
               </div>
 
               <div class="progress section allocated">
                 <p>38%</p>
-                <img src="./assets/bar.svg" alt=""/>
+                <span class="fa fa-database fa-5x"></span>
                 <h3>ALLOCATED</h3>
                 <p>$7600</p>
               </div>
 
               <div class="progress section beyond_halfway">
                 <p>40%</p>
-                <img src="./assets/bar.svg" alt=""/>
+                <span class="fa fa-bitbucket fa-5x"></span>
                 <h3>BEYOND HALFWAY</h3>
                 <p>5 buckets</p>
               </div>

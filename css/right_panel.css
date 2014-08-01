@@ -43,7 +43,7 @@
           height: 35px;
           float: left; }
         .right.panel.container .content .banner .buttons.container .button p {
-          font-size: 10px; }
+          font-size: 10px; display: inline; margin-left: 10px; }
 .right.panel.container .overview.container {
   padding-left: 40px;
   padding-right: 40px;
@@ -54,18 +54,43 @@
   .right.panel.container .overview.container .title {
     width: 100%;
     height: 150px; }
+    .right.panel.container .overview.container .title h1 {
+      display: inline;
+      margin-left: 25px;
+    }
   .right.panel.container .overview.container #budget_overview_title_icon {
     width: 50px;
     height: 50px; }
   .right.panel.container .overview.container #title_underline {
-    width: 100%; }
+    width: 100%;
+    color: #aaa; }
+  .right.panel.container .overview.container .totals.triplet {
+    margin-bottom: 130px;
+    margin-top: 15px;
+  }
+  .right.panel.container .overview.container .totals.triplet .vertical_line {
+    float: left;
+    border-left: 1px solid #aaa;
+    height: 100px;
+  }
   .right.panel.container .overview.container .totals.triplet .totals.section {
     float: left;
-    width: 240px;
+    width: 220px;
     text-align: center; }
+    .right.panel.container .overview.container .totals.triplet .totals.section .section-detail {
+      display: inline-block;
+    }
+      .right.panel.container .overview.container .totals.triplet .totals.section .section-detail span {
+        display: block;
+        font-size: 20px;
+      }
   .right.panel.container .overview.container .totals.triplet vr {
     height: 30px; }
+  .right.panel.container .overview.container .progress.triplet {
+    padding-bottom: 250px;
+    padding-top: 25px;
+  }
   .right.panel.container .overview.container .progress.triplet .progress.section {
     float: left;
-    width: 240px;
+    width: 220px;
     text-align: center; }
