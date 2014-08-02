@@ -3,12 +3,14 @@
   min-height: 155px;
   padding: 0 0 0 0;
   background-image: url("https://loomio-uploads.s3.amazonaws.com/groups/cover_photos/000/000/002/desktop/croppedenspiralites.jpg?1406163668");
-  position: absolute;
-  z-index: -10; }
+  z-index: 1; }
 .right.panel.container .cover_photo_gradient {
   width: 100%;
   min-height: 155px;
   padding: 0 0 0 0;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
   background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.65)));
   background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
@@ -22,7 +24,8 @@
   padding-bottom: 15px;
   position: absolute;
   top: 40px;
-  max-width: 100%; }
+  max-width: 100%;
+  z-index: 3; }
   .right.panel.container .content .banner {
     min-height: 150px;
     /*This is hacky, but workarounds I found were more hacky... Should probly just be replaced with $banner-image-size + $banner-content-gutter */ }
