@@ -6,16 +6,31 @@
 
     .cover_photo
       width: 100%
-      height: 195px
+      min-height: 155px
       padding: 0 0 0 0
       background-image: url('https://loomio-uploads.s3.amazonaws.com/groups/cover_photos/000/000/002/desktop/croppedenspiralites.jpg?1406163668')
+      position: absolute
+      z-index: -10
+
+    .cover_photo_gradient
+      width: 100%
+      min-height: 155px
+      padding: 0 0 0 0
+
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)))
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
+      background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
+      background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 )
 
     .content
       padding-left: 40px
       padding-right: 40px
       padding-bottom: 15px
       position: absolute
-      top: 80px
+      top: 40px
       max-width: 100%
 
       .banner
@@ -32,16 +47,20 @@
           -o-background-size: cover
           background-size: cover
 
+        
+
         /*This is hacky, but workarounds I found were more hacky... Should probly just be replaced with $banner-image-size + $banner-content-gutter */
         h1
           margin-left: 180px
           margin-bottom: 10px
           color: white
+          font-weight: 300
 
         h2
           margin-left: 180px
           font-size: 12px
           color: white
+          font-weight: 300
 
         .buttons.container
           padding-left: 180px
@@ -66,7 +85,7 @@
     .overview.container
       padding-left: 40px
       padding-right: 40px
-      margin-top: 30px
+      margin-top: 25px
       height: 100%
       min-height: 800px
       background: white
@@ -91,7 +110,7 @@
 
 
       #budget_overview_title_icon
-        width: 50px
+        // width: 50px
         height: 50px
         float: left    
 
@@ -102,7 +121,7 @@
 
         .totals.section
           float: left
-          width: 240px
+          // width: 240px
           text-align: center
 
         vr
@@ -112,7 +131,7 @@
 
         .progress.section
           float: left
-          width: 240px
+          // width: 240px
           text-align: center
 
 
