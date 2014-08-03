@@ -370,8 +370,22 @@
     "@hr-border": "@gray-lighter"
   },
   "css": [
-    "grid.less"
+    "grid.less",
+    "progress-bars.less"
   ],
-  "js": [],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=d2c1a13f62186d8c6d60"
+  "js": [
+    "alert.js",
+    "button.js",
+    "carousel.js",
+    "dropdown.js",
+    "modal.js",
+    "tooltip.js",
+    "popover.js",
+    "tab.js",
+    "affix.js",
+    "collapse.js",
+    "scrollspy.js",
+    "transition.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=0eff51df254243732651"
 }
