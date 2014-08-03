@@ -16,7 +16,9 @@ html, body {
       position: fixed;
       z-index: 1; }
     html .buckets.panel, body .buckets.panel {
-      margin-top: 45px; }
+      margin-top: 45px;
+      overflow: scroll;
+      overflow: hidden; }
       html .buckets.panel.container, body .buckets.panel.container {
         float: left; }
     html .right.panel.container, body .right.panel.container {
